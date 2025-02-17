@@ -9,7 +9,10 @@ import Section from '../section';
 
 export default function AboutSection() {
     return (
-        <Section id="about" className="mt-20 space-y-6 bg-white">
+        <Section
+            id="about"
+            className="mt-20 animate-fade-up space-y-6 bg-white animate-once"
+        >
             <Title content="About Me" />
             <Typography variant="p">
                 With over 1 year of experience in Frontend Development,

@@ -2,21 +2,26 @@ import { Mail, MoveRight } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Typography } from '../ui/typography';
 import Section from '../section';
+import { IMAGES } from '@/constants/config';
 
 export default function HeroSection() {
     return (
         <Section
             id="#"
-            className="relative h-screen overflow-hidden bg-primary bg-[url('../src/assets/banner.png')] bg-contain bg-center bg-no-repeat p-0 lg:bg-cover"
+            className={`relative h-screen overflow-hidden bg-primary bg-contain bg-center bg-no-repeat p-0 lg:bg-cover`}
+            style={{ backgroundImage: `url(${IMAGES.BANNER})` }}
         >
-            <div className="absolute flex h-full w-full flex-col items-center justify-center gap-6 bg-primary/80 px-4">
+            <div className="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center gap-6 bg-primary/80 px-4">
                 <img
                     width="128px"
                     height="128px"
-                    src="../src/assets/avatar.png"
+                    src={IMAGES.AVATAR}
                     alt="Frontend Developer Avatar"
                 />
-                <Typography variant="h2" className="border-none text-white">
+                <Typography
+                    variant="h2"
+                    className="border-none text-center text-white"
+                >
                     Hello, I'm{' '}
                     <span className="text-destructive">Quang Doan</span>
                 </Typography>
@@ -24,10 +29,22 @@ export default function HeroSection() {
                     <Typography variant="h1" className="text-white">
                         A
                     </Typography>
-                    <div className="rounded-lg bg-destructive px-4 py-2">
-                        <Typography variant="h1" className="text-white">
-                            Frontend
-                        </Typography>
+                    <div className="relative h-16 w-48 overflow-hidden lg:w-60">
+                        <div className="absolute -translate-y-full animate-slide rounded-lg bg-destructive px-4 py-2">
+                            <Typography variant="h1" className="text-white">
+                                Frontend
+                            </Typography>
+                        </div>
+                        <div className="absolute -translate-y-full animate-slide rounded-lg bg-destructive px-4 py-2 [animation-delay:0.83s]">
+                            <Typography variant="h1" className="text-white">
+                                Backend
+                            </Typography>
+                        </div>
+                        <div className="absolute -translate-y-full animate-slide rounded-lg bg-destructive px-4 py-2 [animation-delay:1.67s]">
+                            <Typography variant="h1" className="text-white">
+                                Mobile
+                            </Typography>
+                        </div>
                     </div>
                     <Typography variant="h1" className="text-white">
                         Developer

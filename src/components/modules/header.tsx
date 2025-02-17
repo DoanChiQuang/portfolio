@@ -13,7 +13,7 @@ import {
     DropdownMenuShortcut,
     DropdownMenuTrigger,
 } from '../ui/dropdown-menu';
-import { LOCALE } from '@/constants/config';
+import { IMAGES, LOCALE } from '@/constants/config';
 
 export default function Header() {
     return (
@@ -22,7 +22,7 @@ export default function Header() {
                 <a href="#" className="p-2">
                     <img
                         loading="lazy"
-                        src="../src/assets/logo.png"
+                        src={IMAGES.LOGO}
                         width="24px"
                         height="24px"
                         className="max-w-none"

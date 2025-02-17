@@ -1,11 +1,11 @@
-import { IMAGES } from './config';
+import { ICONS, IMAGES } from './config';
 
 export const services = [
     {
         label: 'Mobile Development',
         content:
             'I would like to use my knowledge and skills to contribute value to the company',
-        src: '../src/assets/icons/mobile-development.png',
+        src: ICONS.MOBILEDEVELOPMENT,
         alt: 'Mobile Development',
         active: false,
     },
@@ -13,7 +13,7 @@ export const services = [
         label: 'Frontend Development',
         content:
             'I would like to use my knowledge and skills to contribute value to the company',
-        src: '../src/assets/icons/frontend-development.png',
+        src: ICONS.FRONTENDDEVELOPMENT,
         alt: 'Frontend Development',
         active: true,
     },
@@ -21,7 +21,7 @@ export const services = [
         label: 'Backend Development',
         content:
             'I would like to use my knowledge and skills to contribute value to the company',
-        src: '../src/assets/icons/backend-development.png',
+        src: ICONS.BACKENDDEVELOPMENT,
         alt: 'Backend Development',
         active: false,
     },
@@ -29,67 +29,67 @@ export const services = [
 
 export const technologies = [
     {
-        src: '../src/assets/technologies/html.png',
+        src: IMAGES.HTML,
         alt: 'HTML5',
     },
     {
-        src: '../src/assets/technologies/css.png',
+        src: IMAGES.CSS,
         alt: 'CSS3',
     },
     {
-        src: '../src/assets/technologies/javascript.png',
+        src: IMAGES.JAVASCRIPT,
         alt: 'JavaScript',
     },
     {
-        src: '../src/assets/technologies/typescript.png',
+        src: IMAGES.TYPESCRIPT,
         alt: 'Typescript',
     },
     {
-        src: '../src/assets/technologies/php.png',
+        src: IMAGES.PHP,
         alt: 'PHP',
     },
     {
-        src: '../src/assets/technologies/react.png',
+        src: IMAGES.REACT,
         alt: 'React',
     },
     {
-        src: '../src/assets/technologies/react-native.png',
+        src: IMAGES.REACTNATIVE,
         alt: 'React Native',
     },
     {
-        src: '../src/assets/technologies/redux.png',
+        src: IMAGES.REDUX,
         alt: 'Redux',
     },
     {
-        src: '../src/assets/technologies/nextjs.png',
-        alt: 'Nest.js',
+        src: IMAGES.NEXTJS,
+        alt: 'Next.js',
     },
     {
-        src: '../src/assets/technologies/nestjs.png',
+        src: IMAGES.NESTJS,
         alt: 'NestJS',
     },
     {
-        src: '../src/assets/technologies/flutter.png',
+        src: IMAGES.FLUTTER,
         alt: 'Flutter',
     },
     {
-        src: '../src/assets/technologies/firebase.png',
+        src: IMAGES.FIREBASE,
         alt: 'Firebase',
     },
     {
-        src: '../src/assets/technologies/mysql.png',
+        src: IMAGES.MYSQL,
         alt: 'MySQL',
     },
     {
-        src: '../src/assets/technologies/mongodb.png',
+        src: IMAGES.MONGODB,
         alt: 'MongoDB',
     },
     {
-        src: '../src/assets/technologies/git.png',
+        src: IMAGES.GIT,
         alt: 'Git',
     },
     {
-        src: '../src/assets/technologies/bitbucket.png',
+        src: IMAGES.BITBUCKET,
         alt: 'Bitbucket',
     },
 ];
