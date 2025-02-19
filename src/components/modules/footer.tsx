@@ -2,7 +2,7 @@ import { Typography } from '../ui/typography';
 
 export default function Footer() {
     return (
-        <div className="mt-20 flex items-center justify-center py-6">
+        <div className="mt-20 flex items-center justify-center p-4">
             <Typography
                 variant="p"
                 className="!mt-0 text-center font-medium text-primary/80"

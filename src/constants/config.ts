@@ -23,6 +23,8 @@ import FRONTENDDEVELOPMENT from '../assets/icons/frontend-development.png';
 import MOBILEDEVELOPMENT from '../assets/icons/mobile-development.png';
 import VIETNAMESE from '../assets/locale/vi.png';
 import ENGLISH from '../assets/locale/en.png';
+import TODOAPP from '../assets/products/todo-app.png';
+import SPORTSCHEDULE from '../assets/products/sport-schedule.png';
 
 export const IMAGES = {
     AVATAR,
@@ -45,6 +47,8 @@ export const IMAGES = {
     REDUX,
     TYPESCRIPT,
     PRODUCT1,
+    TODOAPP,
+    SPORTSCHEDULE,
 };
 
 export const ICONS = {

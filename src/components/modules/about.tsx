@@ -15,20 +15,20 @@ export default function AboutSection() {
         >
             <Title content="About Me" />
             <Typography variant="p">
-                With over 1 year of experience in Frontend Development,
-                specializing in ReactJS, React Native and Next.js, I would like
-                to use my knowledge and skills to contribute value to the
-                company. My goal is to become a Junior Frontend Developer in the
-                next year.
+                I'm Quang Doan, a Frontend, Backend and Mobile Developer with 1+
+                years of experience in designing, developing and optimizing Web
+                and Mobile applications. I focus on enhancing user experience,
+                improving performance and writing reusable and efficient code
+                with clean architectures.
             </Typography>
             <Typography variant="p">
-                With over 1 year of experience in Frontend Development,
-                specializing in ReactJS, React Native and Next.js, I would like
-                to use my knowledge and skills to contribute value to the
-                company. My goal is to become a Junior Frontend Developer in the
-                next year.
+                I'm currently working with modern technologies such as React,
+                Next.js and Node.js, and I want to contribute and create value
+                for both company and myself with my experience and knowledge. I
+                always keep myself to learn more and become a Senior Developer
+                in next 3 years.
             </Typography>
-            <Title content="What I'm Doing" />
+            <Title content="What I Can Do" />
             <div className="grid grid-cols-1 gap-6 xl:grid-cols-3">
                 {services.map((item, index) => (
                     <ServiceCard

@@ -1,4 +1,4 @@
-import { Languages, Menu } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from '../ui/button';
 import {
     NavigationMenu,
@@ -9,11 +9,10 @@ import {
 import {
     DropdownMenu,
     DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuShortcut,
+    DropdownMenuItem,    
     DropdownMenuTrigger,
 } from '../ui/dropdown-menu';
-import { IMAGES, LOCALE } from '@/constants/config';
+import { IMAGES } from '@/constants/config';
 
 export default function Header() {
     return (
@@ -94,40 +93,6 @@ export default function Header() {
                         </DropdownMenuItem>
                         <DropdownMenuItem className="justify-center rounded-full">
                             <a href="#contact">Contact</a>
-                        </DropdownMenuItem>
-                    </DropdownMenuContent>
-                </DropdownMenu>
-                <DropdownMenu>
-                    <DropdownMenuTrigger asChild>
-                        <Button variant="destructive" className="rounded-full">
-                            <Languages className="hidden md:block" />
-                            EN
-                        </Button>
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent className="mt-4 rounded-2xl">
-                        <DropdownMenuItem className="rounded-full">
-                            Vietnamese
-                            <DropdownMenuShortcut>
-                                <img
-                                    src={LOCALE.VIETNAMESE}
-                                    width="24px"
-                                    height="24px"
-                                    className="max-w-none rounded-sm"
-                                    loading="lazy"
-                                />
-                            </DropdownMenuShortcut>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem className="rounded-full">
-                            English
-                            <DropdownMenuShortcut>
-                                <img
-                                    src={LOCALE.ENGLISH}
-                                    width="24px"
-                                    height="24px"
-                                    className="max-w-none rounded-sm"
-                                    loading="lazy"
-                                />
-                            </DropdownMenuShortcut>
                         </DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>

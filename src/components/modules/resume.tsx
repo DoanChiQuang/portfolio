@@ -5,7 +5,6 @@ import { Button } from '../ui/button';
 import { educations, experience } from '@/constants/data';
 import dayjs from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
-import { useMemo } from 'react';
 import { Meteors } from '../ui/meteor';
 import { StarsBackground } from '../ui/star';
 import Section from '../section';
@@ -46,21 +45,17 @@ function Content({
     list,
     visibleWorkingTimeCount,
 }: ContentProps) {
-    const { workingTime } = useMemo(() => {
-        const startDate = dayjs(start, 'MM/YYYY');
-        const endDate = end ? dayjs(end, 'MM/YYYY') : dayjs();
+    const startDate = dayjs(start, 'MM/YYYY');
+    const endDate = end ? dayjs(end, 'MM/YYYY') : dayjs();
 
-        const years = endDate.diff(startDate, 'year');
-        const months = endDate.diff(startDate, 'month') % 12;
+    const years = endDate.diff(startDate, 'year');
+    const months = endDate.diff(startDate, 'month') % 12;
 
-        const workingTimeCount = visibleWorkingTimeCount
-            ? `• ${years ? `${years} yr${years > 1 ? 's' : ''}, ` : ''}${months} mos`
-            : '';
+    const workingTimeCount = visibleWorkingTimeCount
+        ? `• ${years ? `${years} yr${years > 1 ? 's' : ''}, ` : ''}${months} mos`
+        : '';
 
-        return {
-            workingTime: `${startDate.format('MMM YYYY')} - ${endDate.format('MMM YYYY')} ${workingTimeCount}`,
-        };
-    }, [start, end, visibleWorkingTimeCount]);
+    const workingTime = `${startDate.format('MMM YYYY')} - ${end ? endDate.format('MMM YYYY') : 'Present'} ${workingTimeCount}`;
 
     return (
         <div className="relative border-l pb-4 ps-6 pt-6">
@@ -139,13 +134,6 @@ export default function ResumeSection() {
                         </div>
                     </div>
                 </div>
-                <Button
-                    variant="destructive"
-                    className="z-10 self-center rounded-full"
-                >
-                    <CloudDownload />
-                    Download CV
-                </Button>
                 <Meteors number={30} />
                 <StarsBackground />
             </div>

@@ -4,7 +4,7 @@ export const services = [
     {
         label: 'Mobile Development',
         content:
-            'I would like to use my knowledge and skills to contribute value to the company',
+            'I use React Native and Flutter to develop mobile apps that work on both Android and iOS.',
         src: ICONS.MOBILEDEVELOPMENT,
         alt: 'Mobile Development',
         active: false,
@@ -12,7 +12,7 @@ export const services = [
     {
         label: 'Frontend Development',
         content:
-            'I would like to use my knowledge and skills to contribute value to the company',
+            'I can design, develop and optimize UI/UX based on Figma design using React and Next.js.',
         src: ICONS.FRONTENDDEVELOPMENT,
         alt: 'Frontend Development',
         active: true,
@@ -20,7 +20,7 @@ export const services = [
     {
         label: 'Backend Development',
         content:
-            'I would like to use my knowledge and skills to contribute value to the company',
+            'I use Node.js frameworks like NestJS combined with MySQL, MongoDB, or Firebase to develop high-performance and maintainable backend applications.',
         src: ICONS.BACKENDDEVELOPMENT,
         alt: 'Backend Development',
         active: false,
@@ -108,33 +108,51 @@ export const experience = [
         label: 'Frontend Developer',
         content: 'Freelance',
         start: '04/2024',
-        end: '02/2025',
+        end: '',
         list: [
-            'Developed new features and implemented UI designs',
-            'Developed new features and implemented UI designs',
-            'Developed new features and implemented UI designs',
+            'Developed new features and implemented UI designs into code using React, Next.js, Flutter',
+            'Integrated Google sign-in for user authentication using Firebase',
+            'Designed dynamic functionalities using Redux, Riverpod and Bloc',
+            'Collaborated with other developer to manage and self-organize tasks using Aglie.',
         ],
     },
     {
-        label: 'Frontend & Backend Developer',
+        label: 'PHP/React Native Developer Intern',
         content: 'OPPO Vietnam',
         start: '06/2022',
         end: '03/2024',
         list: [
-            'Developed new features and implemented UI designs',
-            'Developed new features and implemented UI designs',
-            'Developed new features and implemented UI designs',
+            'Assisted in developing and maintaining ERP System using Zend and React Native, ensuring seamless functionality and user-friendly interfaces',
+            'Supported in designing and implementation UI/UX designs that aligned with clients requirements and design principles',
+            'Worked with full life-cycle development team, including backend developers and devops engineers, to delivery efficient, high-quality, and scalable solutions',
+            'Gained hands-on experience in debugging, troubleshooting, and refining app features to improve user experience',
         ],
     },
 ];
 
 export const products = [
     {
-        name: 'Todo List App',
+        name: 'Credit Point Page',
+        type: 'Web Development',
+        description:
+            'Designed UI/UX Design in Figma and Developed UI into code.',
+        image: IMAGES.PRODUCT1,
+        technologies: ['Odoo', 'HTML', 'CSS', 'Bootstrap'],
+    },
+    {
+        name: 'Todo App',
         type: 'Mobile Application',
         description:
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
-        image: IMAGES.PRODUCT1,
-        technologies: ['React Native', 'Firebase'],
+            'Mobile app is built with Flutter, Riverpod and Firebase based on MVVM Architecture that helps users in managing their tasks.',
+        image: IMAGES.TODOAPP,
+        technologies: ['Flutter', 'Riverpod', 'Firebase', 'MVVM Architecture'],
+    },
+    {
+        name: 'Sport Schedule',
+        type: 'Web Development',
+        description:
+            'Developed an intuitive scheduling tool enabling users to efficiently create, modify, and cancel customer appointments.',
+        image: IMAGES.SPORTSCHEDULE,
+        technologies: ['React', 'TailwindCSS', 'Express.js', 'MongoDB'],
     },
 ];

@@ -12,12 +12,6 @@ export default function HeroSection() {
             style={{ backgroundImage: `url(${IMAGES.BANNER})` }}
         >
             <div className="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center gap-6 bg-primary/80 px-4">
-                <img
-                    width="128px"
-                    height="128px"
-                    src={IMAGES.AVATAR}
-                    alt="Frontend Developer Avatar"
-                />
                 <Typography
                     variant="h2"
                     className="border-none text-center text-white"
@@ -52,11 +46,11 @@ export default function HeroSection() {
                 </div>
                 <Typography
                     variant="p"
-                    className="!mt-0 max-w-xl text-center text-white"
+                    className="!mt-0 max-w-lg text-center text-white"
                 >
-                    "Passionate about creating, building and solving
-                    high-performance, scalable web applications with a
-                    pixel-perfect design."
+                    "Passionate about designing, developing, and optimizing Web
+                    and Mobile applications, with a strong focus on solving user
+                    experience and performance problems."
                 </Typography>
                 <div className="flex gap-2">
                     <Button

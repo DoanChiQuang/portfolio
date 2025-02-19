@@ -21,7 +21,7 @@ export default function ProductCard({
         <Card className="overflow-hidden rounded-3xl">
             <img src={image} alt="Product 1" className="w-full" />
             <div className="p-6">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-wrap items-center justify-between gap-2">
                     <Typography variant="h4">{name}</Typography>
                     <Badge variant="default">{type}</Badge>
                 </div>

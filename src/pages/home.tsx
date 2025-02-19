@@ -8,7 +8,7 @@ import ResumeSection from '@/components/modules/resume';
 
 export default function HomePage() {
     return (
-        <main className="container relative p-0 sm:mx-auto sm:p-4">
+        <main className="container relative p-0 sm:mx-auto sm:px-4 sm:pt-4">
             <Header />
             <HeroSection />
             <AboutSection />
