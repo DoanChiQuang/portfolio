@@ -9,7 +9,7 @@ import {
 import {
     DropdownMenu,
     DropdownMenuContent,
-    DropdownMenuItem,    
+    DropdownMenuItem,
     DropdownMenuTrigger,
 } from '../ui/dropdown-menu';
 import { IMAGES } from '@/constants/config';

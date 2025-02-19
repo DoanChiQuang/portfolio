@@ -1,7 +1,6 @@
-import { BookOpen, Briefcase, CloudDownload, Smile } from 'lucide-react';
+import { BookOpen, Briefcase, Smile } from 'lucide-react';
 import Title from '../title';
 import { Typography } from '../ui/typography';
-import { Button } from '../ui/button';
 import { educations, experience } from '@/constants/data';
 import dayjs from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
